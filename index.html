@@ -51,7 +51,7 @@
                                 <span class="action-icon bookmarked success" ng-click="taskSccess()"></span>
                             </aside>
                             <p>{{i.name}}</p>
-                            <p>{{i.streak}} day(s) straight.</p>
+                            <p>{{i.streak}} days straight.</p>
                                 
                             <!-- FF doesn't support transitions on pseudo elements, so I'm using these. -->
                             <span class="a1"></span>
@@ -61,7 +61,8 @@
             </article>
         </section>
         
-        <section role="region" id="start" data-position="right" class="{{calendarclass}}">
+<!--
+        <section role="region" id="calendar" data-position="right" class="{{calendarclass}}">
             <header class="fixed">
                 <h1>Calendar</h1>
             </header>
@@ -69,8 +70,9 @@
                 <div id="cal"></div>
             </article>
         </section>
+-->
         
-        <section role="region" id="start" data-position="right" class="{{newclass}}">
+        <section role="region" id="newgoal" data-position="right" class="{{newclass}}">
             <header class="fixed">
                 <h1>New Goal</h1>
             </header>
@@ -97,9 +99,11 @@
         <li>
             <button class="action-icon email-editlist" ng-click="showGoals()">Checklist</button>
         </li>
+<!--
         <li>
             <button class="action-icon calendar-monthview" ng-click="showCalendar()">Calendar</button>
         </li>
+-->
         <li>
             <button class="action-icon new" ng-click="showNew()">New Goal</button>
         </li>
