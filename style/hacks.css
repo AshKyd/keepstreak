@@ -175,9 +175,9 @@
 [data-type="list"] li{
     position:static !important;
 }
-.row-failure .a1,
-.row-failure .a2,
-.row-success .a1{
+.row-failure.animate .a1,
+.row-failure.animate .a2,
+.row-success.animate .a1{
     content:"";
     background:url("images/tick.png") center;
     background-repeat:no-repeat;
@@ -193,7 +193,7 @@
 }
 
 
-.row-failure .a1{
+.row-failure.animate .a1{
     background-image:url("images/cross.png");
     background-size:80%;
 }

@@ -1,8 +1,8 @@
 
-.animated,
-.row-failure .a1,
-.row-failure .a2,
-.row-success .a1{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
+.animated.animate,
+.row-failure.animate .a1,
+.row-failure.animate .a2,
+.row-success.animate .a1{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
 
 @-webkit-keyframes bounceIn {
 	0% {
@@ -60,7 +60,7 @@
     }
 }
 
-.row-success .a1 {
+.row-success.animate .a1 {
 	-webkit-animation-name: bounceIn;
 	-moz-animation-name: bounceIn;
 	-o-animation-name: bounceIn;
@@ -110,7 +110,7 @@
 	}
 }
 
-.row-failure .a1 {
+.row-failure.animate .a1 {
 	-webkit-animation-name: rotateIn;
 	-moz-animation-name: rotateIn;
 	-o-animation-name: rotateIn;

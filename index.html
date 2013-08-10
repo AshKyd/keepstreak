@@ -45,7 +45,7 @@
                 <section data-type="list">
                     <header>Did you succeed today?</header>
                     <ul>
-                        <li data-ng-repeat="i in goals" class="{{i.class}}">
+                        <li data-ng-repeat="i in goals" class="{{i.class}} {{i.animateClass}}">
                             <aside class="pack-end">
                                 <span class="action-icon cancel fail" ng-click="taskFail()"></span>
                                 <span class="action-icon bookmarked success" ng-click="taskSuccess()"></span>
