@@ -82,13 +82,13 @@
                     <p>Create a new goal to track your progress.</p>
                 </header>
                 <section>
-                            
-                    <p>
-                      <input placeholder="Goal Name" required="" type="text" ng-model="goal.name">
-                    </p>
+                    <form ng-submit="createGoal(goal)">
+                        <p>
+                          <input placeholder="Goal Name" required="" type="text" ng-model="goal.name">
+                        </p>
 
-                    <button ng-click="createGoal(goal)">Create Goal</button>
-                  
+                        <button type="submit">Create Goal</button>
+                    </form>
                 </section>
             </article>
         </section>
