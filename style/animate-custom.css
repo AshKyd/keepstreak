@@ -1,0 +1,118 @@
+
+.animated,
+.row-failure .a1,
+.row-failure .a2,
+.row-success .a1{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
+
+@-webkit-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.3);
+	}
+    
+    20% {
+		opacity: 1;
+		-webkit-transform: scale(1.05);
+	}
+	
+	35% {
+		-webkit-transform: scale(.9);
+	}
+	
+	53% {
+		-webkit-transform: scale(1);
+	}
+    
+    95% {
+        -webkit-transform: scale(1);
+    }
+    
+    100% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@keyframes bounceIn {
+	0% {
+		opacity: 0;
+		transform: scale(.3);
+	}
+    
+    20% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	
+	35% {
+		transform: scale(.9);
+	}
+	
+	53% {
+		transform: scale(1);
+	}
+    
+    95% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(0);
+    }
+}
+
+.row-success .a1 {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+
+@-webkit-keyframes rotateIn {
+	0% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: rotate(-200deg);
+		opacity: 0;
+	}
+	
+	30% {
+		-webkit-transform-origin: center center;
+		-webkit-transform: rotate(0);
+		opacity: 1;
+	}
+	
+	95% {
+		-webkit-transform:scale(1);
+	}
+	
+	100% {
+		-webkit-transform:scale(0);
+	}
+}
+@keyframes rotateIn {
+	0% {
+		transform-origin: center center;
+		transform: rotate(-200deg);
+		opacity: 0;
+	}
+	
+	30% {
+		transform-origin: center center;
+		transform: rotate(0);
+		opacity: 1;
+	}
+	
+	95% {
+		transform:scale(1);
+	}
+	
+	100% {
+		transform:scale(0);
+	}
+}
+
+.row-failure .a1 {
+	-webkit-animation-name: rotateIn;
+	-moz-animation-name: rotateIn;
+	-o-animation-name: rotateIn;
+	animation-name: rotateIn;
+}

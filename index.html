@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html ng-app="streak">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Streak</title>
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/d3.v3.js"></script>
+    <script type="text/javascript" src="lib/app/built.js"></script>
+    <style type="text/css">
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #cal{
+            height:300px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style/hacks.css">
+    <link rel="stylesheet" href="style/transitions.css">
+    <link rel="stylesheet" href="style/util.css">
+    <link rel="stylesheet" href="style/headers.css">
+    <link rel="stylesheet" href="style/lists.css">
+    <link rel="stylesheet" href="style/toolbars.css">
+    <link rel="stylesheet" href="style/buttons.css">
+    <link rel="stylesheet" href="style/input_areas.css">
+
+    <link rel="stylesheet" href="style/animate-custom.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="style/icons/styles/action_icons.css">
+    <link rel="stylesheet" href="style/icons/styles/media_icons.css">
+    <link rel="stylesheet" href="style/icons/styles/comms_icons.css">
+    <link rel="stylesheet" href="style/icons/styles/settings_icons.css">
+</head>
+
+<body ng-controller="StreakControl">
+        <section class="current" role="region" id="index" data-position="current">
+            <header class="fixed skin-dark">
+                <h1>Goals</h1>
+            </header>
+            <article class="content scrollable header">
+                <section data-type="list">
+                    <header>Did you succeed today?</header>
+                    <ul>
+                        <li data-ng-repeat="i in goals" class="{{i.class}}">
+                            <aside class="pack-end">
+                                <span class="action-icon cancel fail" ng-click="taskFail()"></span>
+                                <span class="action-icon bookmarked success" ng-click="taskSccess()"></span>
+                            </aside>
+                            <p>{{i.name}}</p>
+                            <p>{{i.streak}} day(s) straight.</p>
+                                
+                            <!-- FF doesn't support transitions on pseudo elements, so I'm using these. -->
+                            <span class="a1"></span>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </section>
+        
+        <section role="region" id="start" data-position="right" class="{{calendarclass}}">
+            <header class="fixed">
+                <h1>Calendar</h1>
+            </header>
+            <article class="content scrollable header">
+                <div id="cal"></div>
+            </article>
+        </section>
+        
+        <section role="region" id="start" data-position="right" class="{{newclass}}">
+            <header class="fixed">
+                <h1>New Goal</h1>
+            </header>
+            <article class="content scrollable header">
+                <header>
+                    <h2>Add a new goal</h2>
+                    <p>Create a new goal to track your progress.</p>
+                </header>
+                <section>
+                            
+                    <p>
+                      <input placeholder="Goal Name" required="" type="text" ng-model="goal.name">
+                    </p>
+
+                    <button ng-click="createGoal(goal)">Create Goal</button>
+                  
+                </section>
+            </article>
+        </section>
+    
+  <div role="toolbar">
+          
+    <ul>
+        <li>
+            <button class="action-icon email-editlist" ng-click="showGoals()">Checklist</button>
+        </li>
+        <li>
+            <button class="action-icon calendar-monthview" ng-click="showCalendar()">Calendar</button>
+        </li>
+        <li>
+            <button class="action-icon new" ng-click="showNew()">New Goal</button>
+        </li>
+<!--
+        <li>
+            <button class="action-icon delete" ng-click="changeView('stats')">Stats</button>
+        </li>
+-->
+    </ul>
+  </div>
+    
+
+</body>
+
+</html>

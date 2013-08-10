@@ -1,0 +1,11 @@
+{
+  "name": "Streak Pro Plus Edition 2000",
+  "description": "Track your winning streak",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Ash Kyd",
+    "url": "http://kyd.com.au/"
+  },
+  "default_locale": "en",
+  "version": "1.0.2"
+}
