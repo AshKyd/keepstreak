@@ -3,6 +3,8 @@ A goal tracking app to let you keep a watchful eye on your good/bad
 habits. Give up smoking, read a book, do a good deed. Keep Streak
 incentivizes doing the right thing.
 
+![Keep Streak app](/sources/screenshot.png "Keep Streak!")
+
 # State
 This is a little project to familiarise myself with AngularJS,
 Firefox OS and d3. This is a #campjs project.
