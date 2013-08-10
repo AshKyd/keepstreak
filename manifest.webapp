@@ -1,11 +1,15 @@
 {
-  "name": "Streak Pro Plus Edition 2000",
+  "name": "Keep Streak",
   "description": "Track your winning streak",
   "launch_path": "/index.html",
   "developer": {
     "name": "Ash Kyd",
     "url": "http://kyd.com.au/"
   },
+    "icons": {
+        "60": "/img/icons/firefox/keepstreak-60.png",
+        "128": "/img/icons/firefox/keepstreak-128.png"
+    },
   "default_locale": "en",
-  "version": "1.0.2"
+  "version": "1.0.0"
 }
